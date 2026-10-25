@@ -1,0 +1,9 @@
+import{r as e,t}from"./react.DvXU6kJ2.js";import{gt as n,t as r}from"./proxy.C47D9Jou.js";import{t as i}from"./AnimatePresence.CifrrH0K.js";var a=e(t(),1),o=n();function s({items:e}){let[t,n]=(0,a.useState)(0);return(0,o.jsxs)(`div`,{className:`faq`,children:[e.map((e,a)=>{let s=t===a;return(0,o.jsxs)(r.div,{className:`faq-item`,"data-open":s,initial:{opacity:0,y:14},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:`-40px`},transition:{duration:.5,delay:a*.05},children:[(0,o.jsxs)(`button`,{className:`faq-q`,"aria-expanded":s,"aria-controls":`faq-${a}`,id:`faq-btn-${a}`,onClick:()=>n(s?null:a),children:[(0,o.jsx)(`span`,{children:e.q}),(0,o.jsx)(r.span,{className:`faq-plus`,animate:{rotate:s?45:0},transition:{duration:.3},"aria-hidden":`true`,children:`+`})]}),(0,o.jsx)(i,{initial:!1,children:s&&(0,o.jsx)(r.div,{id:`faq-${a}`,role:`region`,"aria-labelledby":`faq-btn-${a}`,className:`faq-a`,initial:{height:0,opacity:0},animate:{height:`auto`,opacity:1},exit:{height:0,opacity:0},transition:{duration:.35,ease:[.22,1,.36,1]},children:(0,o.jsx)(`p`,{children:e.a})})})]},a)}),(0,o.jsx)(`style`,{children:`
+        .faq{max-width:780px;margin:0 auto;display:grid;gap:10px}
+        .faq-item{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+        .faq-item[data-open="true"]{border-color:rgba(25,43,136,.3);box-shadow:var(--shadow)}
+        .faq-q{width:100%;background:none;border:0;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;text-align:left;padding:18px 20px;font-weight:600;font-size:16.5px;color:var(--head);font-family:inherit}
+        .faq-plus{width:28px;height:28px;border-radius:50%;background:var(--cyan-soft);display:grid;place-items:center;font-size:20px;line-height:1;flex:none}
+        .faq-a{overflow:hidden}
+        .faq-a p{padding:0 20px 18px;color:var(--muted);font-size:15.5px}
+      `})]})}export{s as default};

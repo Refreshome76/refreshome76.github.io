@@ -1,0 +1,18 @@
+import{r as e,t}from"./react.DvXU6kJ2.js";import{gt as n,t as r}from"./proxy.C47D9Jou.js";import{t as i}from"./AnimatePresence.CifrrH0K.js";import{r as a,t as o}from"./site.CDbOsPM9.js";var s=e(t(),1),c=n(),l=[.22,1,.36,1];function u({tag:e}){let t=e?[...o.filter(t=>t.tag===e),...o.filter(t=>t.tag!==e)]:o,[n,u]=(0,s.useState)(0),[d,f]=(0,s.useState)(!1);(0,s.useEffect)(()=>{if(d)return;let e=setInterval(()=>u(e=>(e+1)%t.length),6500);return()=>clearInterval(e)},[d,t.length]);let p=t[n];return(0,c.jsxs)(`div`,{className:`rv`,onMouseEnter:()=>f(!0),onMouseLeave:()=>f(!1),children:[(0,c.jsx)(`span`,{className:`rv-mark`,"aria-hidden":`true`,children:`“`}),(0,c.jsx)(`div`,{className:`rv-stage`,children:(0,c.jsx)(i,{mode:`wait`,children:(0,c.jsxs)(r.figure,{initial:{opacity:0,y:18},animate:{opacity:1,y:0},exit:{opacity:0,y:-12},transition:{duration:.6,ease:l},children:[(0,c.jsx)(`blockquote`,{children:p.text}),(0,c.jsxs)(`figcaption`,{children:[(0,c.jsx)(`span`,{className:`stars`,"aria-label":`5 étoiles`,children:`★★★★★`}),(0,c.jsx)(`b`,{children:p.name}),` · avis Google · `,p.date]})]},n)})}),(0,c.jsxs)(`div`,{className:`rv-nav`,children:[(0,c.jsx)(`button`,{type:`button`,"aria-label":`Avis précédent`,onClick:()=>u((n-1+t.length)%t.length),children:`←`}),(0,c.jsx)(`div`,{className:`rv-dots`,children:t.map((e,t)=>(0,c.jsx)(`button`,{type:`button`,"aria-label":`Avis ${t+1}`,className:t===n?`on`:``,onClick:()=>u(t)},t))}),(0,c.jsx)(`button`,{type:`button`,"aria-label":`Avis suivant`,onClick:()=>u((n+1)%t.length),children:`→`})]}),(0,c.jsxs)(`a`,{className:`gbadge`,href:`/avis/`,children:[(0,c.jsx)(`span`,{className:`stars`,children:`★★★★★`}),` `,(0,c.jsx)(`b`,{children:a.googleRating}),` · `,a.googleReviews,` avis Google · Lire tous les avis`]}),(0,c.jsx)(`style`,{children:`
+        .rv{position:relative;max-width:900px;margin:0 auto;display:grid;gap:26px;justify-items:center;text-align:center;padding-top:30px}
+        .rv-mark{position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-size:160px;line-height:1;color:var(--cyan);opacity:.5;font-family:Georgia,serif;pointer-events:none}
+        .rv-stage{min-height:200px;display:grid;align-items:center}
+        .rv figure{margin:0;display:grid;gap:18px}
+        .rv blockquote{margin:0;font-size:clamp(20px,2.4vw,30px);line-height:1.35;font-weight:300;letter-spacing:-.01em;color:var(--head);text-wrap:pretty}
+        .rv figcaption{font-size:14px;color:var(--muted);display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+        .rv figcaption b{color:var(--ink);font-weight:600}
+        .stars{color:#f5b301;letter-spacing:2px}
+        .rv-nav{display:flex;align-items:center;gap:16px}
+        .rv-nav>button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:18px;color:var(--head);transition:background .2s,color .2s}
+        .rv-nav>button:hover{background:var(--navy);color:#fff}
+        .rv-dots{display:flex;gap:8px}
+        .rv-dots button{width:8px;height:8px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0;transition:background .2s,transform .2s}
+        .rv-dots button.on{background:var(--navy);transform:scale(1.3)}
+        .gbadge{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:50px;padding:10px 18px;font-size:14px;text-decoration:none;color:var(--ink);transition:box-shadow .2s,transform .2s var(--ease)}
+        .gbadge:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+      `})]})}export{u as default};

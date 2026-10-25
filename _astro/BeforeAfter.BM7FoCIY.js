@@ -1,0 +1,1 @@
+export{t as default}from"./BeforeAfter.Vg9I85FX.js";

@@ -1,0 +1,12 @@
+import{r as e,t}from"./react.DvXU6kJ2.js";import{gt as n,t as r}from"./proxy.C47D9Jou.js";import{t as i}from"./AnimatePresence.CifrrH0K.js";import{t as a}from"./BeforeAfter.Vg9I85FX.js";var o=e(t(),1),s=n(),c=[{k:`all`,l:`Tout`},{k:`toiture`,l:`Toiture`},{k:`facade`,l:`Façade`},{k:`terrasse`,l:`Terrasse et sols`},{k:`autres`,l:`Autres`}];function l({items:e}){let[t,n]=(0,o.useState)(`all`),l=t===`all`?e:e.filter(e=>e.tag===t);return(0,s.jsxs)(`div`,{className:`gal`,children:[(0,s.jsx)(`div`,{className:`gal-tabs`,role:`tablist`,children:c.map(r=>(0,s.jsxs)(`button`,{type:`button`,role:`tab`,"aria-selected":t===r.k,className:t===r.k?`on`:``,onClick:()=>n(r.k),children:[r.l,` `,(0,s.jsx)(`small`,{children:r.k===`all`?e.length:e.filter(e=>e.tag===r.k).length})]},r.k))}),(0,s.jsx)(r.div,{layout:!0,className:`gal-grid`,children:(0,s.jsx)(i,{children:l.map(e=>(0,s.jsxs)(r.article,{layout:!0,initial:{opacity:0,y:20},animate:{opacity:1,y:0},exit:{opacity:0,scale:.96},transition:{duration:.45},children:[(0,s.jsx)(a,{before:e.before,after:e.after,ratio:e.ratio}),(0,s.jsx)(`h3`,{children:e.title}),(0,s.jsxs)(`p`,{children:[e.what,` `,(0,s.jsxs)(`span`,{children:[`· `,e.place]})]})]},e.before))})}),(0,s.jsx)(`style`,{children:`
+        .gal-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:36px}
+        .gal-tabs button{border:1px solid var(--line);background:var(--card);border-radius:50px;padding:10px 18px;font-size:14px;font-weight:600;color:var(--head);cursor:pointer;transition:background .2s,color .2s}
+        .gal-tabs button small{font-weight:400;color:var(--muted);margin-left:4px}
+        .gal-tabs button.on{background:var(--navy);color:#fff}.gal-tabs button.on small{color:rgba(255,255,255,.7)}
+        .gal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px 24px;align-items:start}
+        .gal-grid article{display:grid;gap:8px}
+        .gal-grid h3{font-size:18px;font-weight:600;color:var(--head);margin-top:6px}
+        .gal-grid p{font-size:14px;color:var(--muted);margin:0}.gal-grid p span{color:var(--navy)}
+        @media(max-width:1000px){.gal-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:640px){.gal-grid{grid-template-columns:1fr}}
+      `})]})}export{l as default};
